@@ -1,0 +1,37 @@
+/*cambio color*/
+#modo{
+    cursor: pointer;
+}
+.dark{
+    background: rgb(4, 24, 27);
+    color: white;
+}
+
+.dark h1{
+    text-shadow: .3em .1em 1em  lightgreen;
+}
+.dark .menu{
+    color: white;
+    text-shadow: .3em .1em 1em  lightgreen;
+}
+.dark .nav:hover .temas{
+    color: white;
+    text-shadow: .1em .1em .1em  black;
+}
+.dark .temas:hover{
+    background-color:rgb(4, 24, 27);
+    border-bottom: .1vw solid lightgreen;
+}
+
+/* main */
+.dark .main{
+    border: .1vw solid white;
+}
+
+/* footer */
+
+.dark .footer h2{
+    color: lightblue;
+    text-shadow: .1em .1em .1em  brown;
+    border-bottom: .1em solid white;
+}

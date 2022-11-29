@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    font-size: 62.7%;
+}
+
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 25% auto 20%; 
+}
+.header{
+    grid-area: header;
+    font-size: 2rem;
+}
+
+.header .nav{
+    float: left;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding: .1em;
+}
+.nav .menu{
+    font-size: 2.3em;
+    
+}
+.nav a{
+    font-size: 1.3em;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.nav .temas{
+    color: transparent;
+}
+.nav:hover .temas{
+    color: black;
+    transition: 1.5s;  
+    margin: 7% 0; 
+    text-shadow: .1em .1em .2em  lightblue;
+}
+.temas:hover{
+    background-color: lightcyan;
+    border-bottom: .1vw solid lightgreen;
+}
+.header .modo{
+    float: right;
+    margin: 6vw 2%;
+    border: .1em solid rgb(20, 173, 220);;
+    padding: 1%;
+    border-radius: .5em;
+}
+
+
+/*main - contenido principal*/
+.main{
+    grid-area: main;
+    text-align: center;
+    font-size: 1.5em;
+}
+.main h1{
+    margin: 5% 0;
+    text-shadow: .1em .1em 1em  crimson;
+}
+.main img{
+    width: 70%;
+    background-color: white;
+    margin:auto;
+}
+
+/*footer - pie de pagina*/
+.footer{
+    grid-area: footer;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.footer h2{
+    margin: 5% 0;
+    color: brown;
+    text-shadow: .1em .1em .1em  lightblue;
+}
+
+.footer hr{
+    padding: .5%;
+    margin: 0 15%;
+    border-radius: 1vw;
+    background-color: lightblue;
+}
+
+.footer h3{
+    margin: 3% 0 0;
+    color: lightgrey;
+    text-shadow: .1em .7em .1em  black;
+}
+.footer img{
+    width: 5vw;
+    margin: 0 65%;
+    position: absolute;
+}
+/*escritorio*/
+@media (min-width: 1023px) {
+    html{
+        height: 100%;
+    }
+    body{
+        min-height: 100vh;
+        grid-template-rows: 20% auto 20%;
+    }
+    .header .nav{
+        font-size: 2em;
+        top: 5%;
+        position: absolute;
+    }
+    .modo i{
+        font-size: 1.3em;
+    }
+    
+    .main h1{
+        font-size: 3em;
+        margin: 2%;
+    }
+    .main img{
+    max-width: 30%;
+    }
+
+      /* footer - pie de pagina */
+    .footer h2{
+        margin: 1% 0;
+        font-size: 2em;
+    }
+    .footer hr{
+        margin: 0 35%;
+    }
+    .footer h3{
+        margin-top: .5%;
+        font-size: 1.5em;
+    }
+}
